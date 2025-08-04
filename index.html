@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../Portfolio/RLogo.jpg" alt="" id="logo-img">
+            <a href="#" id="logo-text">Richita Karira</a>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+
+        <div id="Mode">
+            <div id="switch"></div>
+            <label id="inner-text">Dark</label>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="left-column">
+            <div class="img-box">
+                <img src="../Portfolio/PhotoBackdrop-removebg-preview.png" alt="" class="img-back">
+                <img src="../Portfolio/RichitaImage.png" alt="" class="img-main">
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="content">
+                <h1>Hello, I'm <span>Richita Karira</span></h1>
+                <p>My Skillset includes: <span>HTML, CSS, JavaScript, Java, C, PowerBI</span></p>
+                <button>Contact Me</button>
+                <div class="social-link">
+                    <a href="https://www.linkedin.com/in/richitakarira" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:richitakarira1230@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/RichitaKarira" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const Switch_Mode = document.getElementById('switch');
+        const Inner_Text = document.getElementById('inner-text');
+        Mode.onclick = function() {
+            document.body.classList.toggle('dark-mode');
+            Switch_Mode.classList.toggle('switch-active');
+            Inner_Text.classList.toggle('Inner-text-active');
+            if(document.body.classList.contains('dark-mode')){
+                Inner_Text.innerHTML= 'Light';
+            } else{
+                Inner_Text.innerHTML = 'Dark';
+            }
+        }
+    </script>
+</body>
+</html>
